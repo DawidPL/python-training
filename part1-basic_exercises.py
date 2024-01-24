@@ -3,7 +3,7 @@ Exercise 1: Calculate the multiplication and sum of two numbers
 Given two integer numbers, return their product only if the product is equal to or lower than 1000. Otherwise, return their sum.
 '''
 
-def calculation(num1, num2):
+def calculation_first(num1, num2):
     if num1 * num2 <= 1000:
         return num1 * num2
     else:
@@ -12,8 +12,47 @@ def calculation(num1, num2):
 
 #second version
     
-def multiplication_or_sum(num1, num2):
+def calculation_first_second_ver(num1, num2):
   return num1 * num2 if num1 * num2 <= 1000 else num1 + num2
   
-return_value = multiplication_or_sum(30, 50)  
-print (return_value)
+first_task = calculation_first_second_ver(30, 50)  
+print (first_task)
+
+
+'''
+Exercise 2: Print the sum of the current number and the previous number
+Write a program to iterate the first 10 numbers, and in each iteration, print the sum of the current and previous number.
+'''
+
+def calculation_two():
+    current_num = 0
+    previous_num = 0
+    sum_num = 0
+    for i in range(10):
+        print(f"Current Number {current_num} Previous Number {previous_num} Sum: {sum_num}")
+        current_num += 1
+        previous_num = current_num - 1
+        sum_num = current_num + previous_num
+
+second_task = calculation_two()
+print(second_task)
+
+
+'''
+Exercise 3: Print characters from a string that are present at an even index number
+Write a program to accept a string from the user and display characters that are present at an even index number.
+'''
+
+def return_even_elements(string):
+    split_string = [* string]
+    for i in range(0, len(split_string)):
+        if i % 2 == 0:
+            print (split_string[i])
+
+# second version with <stride> in range:
+            
+    for i in range(0, len(split_string), 2):
+        print(split_string[i])
+        
+third_task = return_even_elements('javascript')
+print(third_task)
