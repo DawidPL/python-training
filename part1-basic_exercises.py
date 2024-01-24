@@ -56,3 +56,23 @@ def return_even_elements(string):
         
 third_task = return_even_elements('javascript')
 print(third_task)
+
+
+'''
+Write a program to remove characters from a string starting from zero up to n and return a new string.
+'''
+
+def remove_chars(string, num_of_elements_to_remove):
+    split_string = [* string]
+    del split_string[0:num_of_elements_to_remove]
+        
+#second version
+    
+    while len(split_string) > num_of_elements_to_remove:
+        split_string.pop(0)
+
+    new_string = ''.join(split_string)
+    return new_string
+
+fourth_task = remove_chars('python', 3)
+print(fourth_task)
