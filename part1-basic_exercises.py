@@ -89,3 +89,16 @@ def compare_list_element(list):
 
 fifth_task = compare_list_element([10, 20, 30, 20, 20, 20]) 
 print (fifth_task)
+
+'''
+Exercise 6: Display numbers divisible by 5 from a list
+Iterate the given list of numbers and print only those numbers which are divisible by 5
+'''
+
+def divisible_numbers(list):
+    for i in list:
+        if i % 5 == 0:
+            print (i)
+
+task_six = divisible_numbers([20, 40, 22, 30, 21])
+print(task_six)
