@@ -102,3 +102,19 @@ def divisible_numbers(list):
 
 task_six = divisible_numbers([20, 40, 22, 30, 21])
 print(task_six)
+
+'''
+Exercise 7: Return the count of a given substring from a string
+Write a program to find how many times substring “Emma” appears in the given string.
+'''
+
+def substring_counter(string):
+    splitter_string = string.split(' ')
+    counter = 0
+    for item in splitter_string:
+        if item == "Emma":
+            counter += 1
+    print (f'Emma in this string appear {counter} times')
+
+task_seven = substring_counter("Emma in this sentece appear 2 times. Emma is 10 years old")
+print (task_seven)
