@@ -59,7 +59,7 @@ print(third_task)
 
 
 '''
-Write a program to remove characters from a string starting from zero up to n and return a new string.
+Exercise 4: Write a program to remove characters from a string starting from zero up to n and return a new string.
 '''
 
 def remove_chars(string, num_of_elements_to_remove):
@@ -76,3 +76,16 @@ def remove_chars(string, num_of_elements_to_remove):
 
 fourth_task = remove_chars('python', 3)
 print(fourth_task)
+
+'''
+Exercise 5: Write a function to return True if the first and last number of a given list is same. If numbers are different then return False.
+'''
+
+def compare_list_element(list):
+    if list[0] == list[-1]:
+        return True
+    else:
+        return False
+
+fifth_task = compare_list_element([10, 20, 30, 20, 20, 20]) 
+print (fifth_task)
