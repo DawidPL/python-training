@@ -118,3 +118,48 @@ def substring_counter(string):
 
 task_seven = substring_counter("Emma in this sentece appear 2 times. Emma is 10 years old")
 print (task_seven)
+
+'''
+Exercise 8: Print the following patterns:
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+
+1 1 1 1 1 
+2 2 2 2 
+3 3 3 
+4 4 
+5
+
+
+'''
+
+def print_numbers():
+    rows = 6
+    
+    for i in range(1, rows):
+        for j in range(i):
+            print(i, sep=" ", end=" ")
+        print(" ")
+
+    for i in range(1, rows):
+        for j in range(1, i + 1):
+            print(j,  sep=" ", end=" ")   
+        print(" ")
+    
+    for i in reversed(range(1, rows)):
+        for j in range(i):
+            print(i, sep=" ", end=" ")
+        print(" ")
+
+
+task_eight = print_numbers()
+print(print_numbers)
