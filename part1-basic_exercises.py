@@ -268,3 +268,14 @@ def pattern_print():
         
 task_fourtheen = pattern_print()
 print(task_fourtheen)
+
+'''
+Exercise 15: Write a function called exponent(base, exp) that returns an int value of base raises to the power of exp.
+
+'''
+
+def exponent(base, exp):
+    return base**exp
+
+task_fifteen = exponent(2, 5)
+print(task_fifteen)
