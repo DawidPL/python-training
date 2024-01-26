@@ -213,3 +213,26 @@ def extract_digit(number):
 
 task_eleven = extract_digit(1234)
 print(task_eleven)
+
+'''
+Exercise 12: Calculate income tax for the given income by adhering to the rules below
+'''
+
+def tax_calculation(income):
+    rate_two = 0.1
+    rate_three = 0.2
+    tax = 0
+
+    if income <= 10000:
+        return tax
+    elif income > 10000 and income <= 20000:
+        tax += income * rate_two
+        return tax
+    else:
+        remaine_income = income - 20000
+        tax = remaine_income  * rate_three
+        tax += 10000 * rate_two
+        return tax
+
+task_twelve = tax_calculation(45000)
+print(task_twelve)
