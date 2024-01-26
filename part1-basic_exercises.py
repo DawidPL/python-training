@@ -248,4 +248,23 @@ def multiplication_table():
         print(" ")
 
 task_thirteen = multiplication_table()
-print(multiplication_table)
+print(task_thirteen)
+
+'''
+Exercise 14: Print a downward Half-Pyramid Pattern of Star (asterisk)
+
+* * * * *  
+* * * *  
+* * *  
+* *  
+*
+
+'''
+
+def pattern_print():
+    for num in reversed(range(1,6)):
+        print(f'{num * "* "}', end='')
+        print(" ")
+        
+task_fourtheen = pattern_print()
+print(task_fourtheen)
