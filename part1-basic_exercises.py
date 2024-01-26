@@ -236,3 +236,16 @@ def tax_calculation(income):
 
 task_twelve = tax_calculation(45000)
 print(task_twelve)
+
+'''
+Exercise 13: Print multiplication table from 1 to 10
+'''
+
+def multiplication_table():
+    for num in range(1, 11):
+        for i in range(1, 11):
+            print(i * num, sep=" ", end=" ")
+        print(" ")
+
+task_thirteen = multiplication_table()
+print(multiplication_table)
