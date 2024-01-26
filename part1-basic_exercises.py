@@ -199,3 +199,17 @@ def new_list(list1, list2):
 
 task_ten = new_list([10, 20, 25, 30, 35], [40, 45, 60, 75, 90])
 print (task_ten)
+
+'''
+Exercise 11: Write a Program to extract each digit from an integer in the reverse order.
+For example, If the given int is 7536, the output shall be “6 3 5 7“, with a space separating the digits.
+'''
+
+def extract_digit(number):
+    num_to_list = [* str(number)]
+    reversed_num = reversed(num_to_list)
+    digits = " ".join(reversed_num)
+    return digits
+
+task_eleven = extract_digit(1234)
+print(task_eleven)
