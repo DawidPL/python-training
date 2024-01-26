@@ -144,7 +144,7 @@ Exercise 8: Print the following patterns:
 
 def print_numbers():
     rows = 6
-    
+
     for i in range(1, rows):
         for j in range(i):
             print(i, sep=" ", end=" ")
@@ -162,4 +162,21 @@ def print_numbers():
 
 
 task_eight = print_numbers()
-print(print_numbers)
+print(task_eight)
+
+
+'''
+Exercise 9: Write a program to check if the given number is a palindrome number.
+'''
+
+def palidrome(number):
+    number_to_list = [* str(number)]
+    reversed_list = number_to_list[::-1]
+    reversed_number = ''.join(reversed_list)
+    if str(number) == reversed_number:
+        return True
+    else:
+        return False
+
+task_nine = palidrome(151)
+print(task_nine)
