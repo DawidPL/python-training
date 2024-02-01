@@ -32,3 +32,27 @@ def decimal_converter(num):
 
 task_three = decimal_converter(8)
 print(task_three)
+
+'''
+Exercise 4: Display float number with 2 decimal places using print()
+'''
+
+def truncate(num):
+    return round(num, 2)
+
+task_four = truncate(23.213243)
+print(task_four)
+
+'''
+Exercise 5: Accept a list of 5 float numbers as an input from the user
+'''
+
+def get_five_numbers():
+    float_list = []
+    for _ in range(5):
+        x = float(input("Podaj liczbę:"))
+        float_list.append(x)
+    return float_list
+
+task_five = get_five_numbers()
+print(task_five)
