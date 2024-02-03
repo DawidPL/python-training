@@ -61,5 +61,15 @@ def new_file_generator(line_to_remove):
             else:
                 new_f.write(text_line)
             lineindex += 1
-task_six = new_file_generator(5)
-print(task_six)
+
+'''
+Exercise 7: Accept any three string from one input() call
+Write a program to take three names as input from a user in the single input() function call.
+'''
+
+def multistring_input():
+    names = input('Enter 3 names separeted by space: ')
+    split_names = names.split(',')
+    for name in split_names:
+        print(f'Name{split_names.index(name) + 1} {name}')
+
