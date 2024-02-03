@@ -73,3 +73,25 @@ def multistring_input():
     for name in split_names:
         print(f'Name{split_names.index(name) + 1} {name}')
 
+'''
+Exercise 8: Format variables using a string.format() method.
+Write a program to use string.format() method to format the following three variables as per the expected output
+'''
+
+def string_format():
+    total_money = 1000
+    quantity = 3
+    price = 450
+    print('I have {totalmoney} so I can buy {quantity} for {price}'.format(totalmoney=total_money, quantity=quantity, price=float(price)))
+
+
+'''
+Exercise 10: Read line number 4 from the following file
+'''
+
+def read_line():
+    with open('text.txt', 'r') as f:
+        lines = f.readlines()
+        print(lines[3])
+
+read_line()
