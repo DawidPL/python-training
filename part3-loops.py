@@ -68,4 +68,63 @@ def display_numbers(list):
         else:
             print(i)
 
-display_numbers([12, 75, 150, 180, 145, 525, 50])
+'''
+Exercise 6: Count the total number of digits in a number
+Write a program to count the total number of digits in a number using a while loop.
+
+For example, the number is 75869, so the output should be 5.
+'''
+
+def count_total_number(num):
+    if num > 0:
+        list_to_str = str(num)
+    else:
+        # if number is negative
+        list_to_str = str(abs(num))
+
+    print (len(list_to_str))
+  
+'''
+Exercise 7: Print the following pattern
+
+5 4 3 2 1 
+4 3 2 1 
+3 2 1 
+2 1 
+1
+
+'''
+
+def print_pattern():
+    for i in range(5, 0, -1):
+        for j in range(i, 0, -1):
+            print (j, end=" ")
+        print(" ")
+
+'''
+Exercise 8: Print list in reverse order using a loop
+'''
+
+def reversed_list(list_to_reversed):
+    for i in reversed(list_to_reversed):
+        print (i)
+
+reversed_list([10, 20, 30, 40, 50])
+
+'''
+Exercise 9: Display numbers from -10 to -1 using for loop
+'''
+
+def display_negatives():
+    for i in range(-10, 0):
+        print (i)
+
+'''
+Exercise 10: Use else block to display a message “Done” after successful execution of for loop
+'''
+
+def display_message():
+    for i in range(5):
+        print (i)
+    else:
+        print("done")
