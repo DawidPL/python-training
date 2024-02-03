@@ -9,8 +9,6 @@ def input_multiplication():
     input_two = input("Podaj drugą liczbę:")
     return int(input_one)* int(input_two)
 
-task_one = input_multiplication()
-print(task_one)
 
 '''
 Exercise 2: Display three string “Name”, “Is”, “James” as “Name**Is**James”
@@ -20,8 +18,6 @@ Use the print() function to format the given words in the mentioned format. Disp
 def string_display(string_one, string_two, string_three):
     print(string_one, string_two, string_three, sep='**')
 
-task_two = string_display('Name', 'Is', 'David')
-print(task_two)
 
 '''
 Exercise 3: Convert Decimal number to octal using print() output formatting
@@ -30,18 +26,12 @@ Exercise 3: Convert Decimal number to octal using print() output formatting
 def decimal_converter(num):
     print('%o' % num) 
 
-task_three = decimal_converter(8)
-print(task_three)
-
 '''
 Exercise 4: Display float number with 2 decimal places using print()
 '''
 
 def truncate(num):
     return round(num, 2)
-
-task_four = truncate(23.213243)
-print(task_four)
 
 '''
 Exercise 5: Accept a list of 5 float numbers as an input from the user
@@ -54,5 +44,22 @@ def get_five_numbers():
         float_list.append(x)
     return float_list
 
-task_five = get_five_numbers()
-print(task_five)
+
+'''
+Exercise 6: Write all content of a given file into a new file by skipping line number 5
+'''
+
+def new_file_generator(line_to_remove):
+    with open('text.txt', 'r') as f:
+        lineindex = 0
+        file_lines = f.readlines()
+    with open('new_text.txt', 'w') as new_f:
+        for text_line in file_lines:
+            if lineindex == line_to_remove:
+                lineindex += 1
+                continue
+            else:
+                new_f.write(text_line)
+            lineindex += 1
+task_six = new_file_generator(5)
+print(task_six)
