@@ -206,3 +206,52 @@ def display_odd_index():
         if index % 2 != 0:
             print (my_list[index])
 
+'''
+Exercise 16: Calculate the cube of all numbers from 1 to a given number
+'''
+
+def calculate_cube(num):
+    for i in range(1, num + 1):
+        print(f'Current Number is: {i} and the cume is {i*i*i}')
+
+
+'''
+Exercise 17: Find the sum of the series upto n terms
+'''
+
+def find_sum(n, number):
+    n_sum = 0
+    new_number = 0
+    while n > 0:
+        n_sum = n * str(number)
+        new_number = new_number + int(n_sum)
+        n -= 1
+    print(new_number)
+
+'''
+Exercise 18: Print the following pattern
+Write a program to print the following start pattern using the for loop
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+
+'''
+
+def print_pattern():
+    for i in range(1,6):
+        for j in range(1, i+1):
+            print('*', end=" ")
+        print(" ")
+    for i in range(4+1,1, -1):
+        for j in range(i,1, -1):
+            print('*', end=" ")
+        print(" ")
+print_pattern()
+
