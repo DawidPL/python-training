@@ -109,7 +109,7 @@ def reversed_list(list_to_reversed):
     for i in reversed(list_to_reversed):
         print (i)
 
-reversed_list([10, 20, 30, 40, 50])
+#reversed_list([10, 20, 30, 40, 50])
 
 '''
 Exercise 9: Display numbers from -10 to -1 using for loop
@@ -128,3 +128,81 @@ def display_message():
         print (i)
     else:
         print("done")
+
+'''
+Exercise 11: Write a program to display all prime numbers within a range
+'''
+
+def prime_numbers(start_range, end_range):
+    print(f'Prime numbers for range {start_range} and {end_range} are:')
+    for n in range(start_range, end_range +1):
+        for i in range(2, n):
+            if (n % i) == 0:
+                break
+        else:
+            print(n)
+
+
+'''
+Exercise 12: Display Fibonacci series up to 10 terms
+'''
+
+def fibo():
+    fibo_list = []
+    for i in range(10):
+        if i == 0 or i == 1 :
+            fibo_list.append(i)
+        else:
+            fibo_list.append((fibo_list[i - 2]) + fibo_list[i-1])
+    print (*fibo_list)
+
+    #second version
+
+    num1, num2 = 0, 1
+    for i in range(10):
+        print(num1, end=" ")
+        next_num = num1 + num2
+
+        num1 = num2
+        num2 = next_num
+
+'''
+Exercise 13: Find the factorial of a given number
+'''
+
+def factorial_number(num):
+    factorial_number = 1
+    for i in range(num, 1 ,-1):
+        factorial_number *= i
+    print (factorial_number)
+
+'''
+Exercise 14: Reverse a given integer number
+'''
+
+def reverse_int(number):
+    num_to_str = str(number)
+    reversed_num = reversed(num_to_str)
+    x = ''
+    for el in list(reversed_num):
+        x += el
+    print (x)
+
+    # second version
+    reversed_number = 0
+    while number > 0:  
+        reminder = number % 10
+        reversed_number = (reversed_number * 10) + reminder
+        number = number // 10
+    print(reversed_number)
+
+'''
+Exercise 15: Use a loop to display elements from a given list present at odd index positions
+'''
+
+def display_odd_index():
+    my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    for index in range(len(my_list)):
+        if index % 2 != 0:
+            print (my_list[index])
+
